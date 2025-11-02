@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main style={{ minHeight: "100vh", display: "grid", placeItems: "center" }}>
+    <main style={{ minHeight: "100vh", display: "grid", placeItems: "center", backgroundColor: "black" }}>
       <div style={{ textAlign: "center" }}>
-        <h1 style={{ fontSize: 48, marginBottom: 16 }}>Character RNG</h1>
+        <h1 style={{ fontSize: 48, marginBottom: 16, color: "deeppink" }}>Character RNG</h1>
         <Link
           href="/WaifuRNG"
           style={{
@@ -13,7 +13,7 @@ export default function Home() {
             padding: "0.8rem 1.4rem",
             borderRadius: 10,
             background: "#222",
-            color: "#fff",
+            color: "lightcoral",
             border: "1px solid #222",
             textDecoration: "none",
             fontWeight: 600,

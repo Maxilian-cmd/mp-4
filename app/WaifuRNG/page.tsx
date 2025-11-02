@@ -35,7 +35,6 @@ export default async function WaifuRNG() {
             <h2 style={{ marginTop: 16 }}><strong>Name: </strong>{nameStr}</h2>
             <p><strong>Origin: </strong>{waifu.anime}</p>
             <p><strong>Gender: </strong> {waifu.gender ?? "Unknown"}</p>
-            <p><strong>Age: </strong> {waifu.age ?? "Unknown"}</p>
 
             <p style={{ marginTop: 12 }}>
                 {decodeHTML(waifu.description ?? "No description available.")}

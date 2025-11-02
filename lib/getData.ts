@@ -10,6 +10,7 @@ export async function getFact(): Promise<Fact> {
     ensureApiKey(API_KEY);
     const res = await fetch(`${BIN_URL}/fact`, {
         headers: { Authorization: API_KEY! },
+        cache: 'no-store',
     });
     if (!res.ok) throw new Error(`Fact fetch failed: ${res.status}`);
     return res.json();
@@ -23,6 +24,7 @@ export async function getWaifu(params?: { name?: string; anime?: string }): Prom
 
     const res = await fetch(url, {
         headers: { Authorization: API_KEY! },
+        cache: 'no-store',
     });
     if (!res.ok) throw new Error(`Waifu fetch failed: ${res.status}`);
     return (await res.json()) as Waifu;
